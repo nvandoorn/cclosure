@@ -22,7 +22,7 @@ struct ClosureContainer_t {
   int n;
 };
 
-int cclosure_parser(const char *in, char *out, int outSize);
+int cclosure_processor(const char *in, char *out, int outSize);
 int cclosure_core(int argc, char *argv[]);
 
 #endif

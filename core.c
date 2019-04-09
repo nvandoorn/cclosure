@@ -55,11 +55,15 @@ int writeClosures(char *out, struct ClosureContainer_t *container) {
     snprintf(buff, STRING_BUFFER_SIZE, "%s {\n", c->signature);
     strcat(out, buff);
     strcat(out, c->body);
+    strcat(out, "\n}\n");
   }
   return 0;
 }
 
-int cclosure_parser(const char *in, char *out, int outSize) {
+/**
+ * Entry point for the parser
+ */
+int cclosure_processor(const char *in, char *out, int outSize) {
   int r;
   struct ClosureContainer_t container = {.n = 0};
 
