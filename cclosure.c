@@ -18,7 +18,6 @@ int main(int argc, char* argv[]) {
   char inBuff[BUFFER_SIZE], outBuff[BUFFER_SIZE], outName[1024];
   char *inName = argv[1];
   FILE* f = fopen(inName, "r");
-  fscanf(f, "%s", inBuff);
   fread(inBuff, 1, BUFFER_SIZE, f);
   fclose(f);
 
