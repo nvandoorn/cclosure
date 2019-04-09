@@ -19,7 +19,7 @@ int generateRoutineName(char *out, int size) {
 
 /**
  * Given the input
- * 'int (int a, double b, void* c) => { ... }'
+ * 'int (int a, double b, void* c) { ... }'
  *
  * generate
  *
@@ -79,6 +79,9 @@ done:
   return r;
 }
 
+/**
+ * Entry point for the main binary
+ */
 int cclosure_core(int argc, char *argv[]) {
   if (argc < 2) {
     printf("Usage ./cclosure <filename>.c\n");
