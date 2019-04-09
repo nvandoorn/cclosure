@@ -1,0 +1,3 @@
+[submodule "segfault-suite"]
+	path = segfault-suite
+	url = https://github.com/nvandoorn/segfault-suite
